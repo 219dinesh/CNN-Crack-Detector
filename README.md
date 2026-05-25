@@ -5,7 +5,7 @@ A deep learning project utilizing a custom Convolutional Neural Network (CNN) bu
 # ✨ Features
 * Custom CNN Architecture: A lightweight, 4-block convolutional network optimized for binary classification (Cracked vs. Uncracked).
 * Robust Training Pipeline: Includes on-the-fly data augmentation (flips, rotations, color jitter), dropout regularization, and real-time metric tracking to prevent overfitting.
-* Desktop GUI: A standalone PyQt5 application allowing users to upload local images and get instant predictions with confidence percentages.
+* Testing: A PyQt5 application allowing users to upload local images and get instant predictions with confidence percentages.
 * Hardware Agnostic: Automatically detects and utilizes NVIDIA CUDA GPUs for training/inference, but safely falls back to CPU if no GPU is available.
 
 # 📂 Project Structure
@@ -19,7 +19,7 @@ cnn-crack-detector/
 ├── src/                    
 │   ├── model.py            # CNN Class definition
 │   ├── train.py            # Training loop, validation, and graph plotting
-│   └── test.py              # PyQt5 GUI inference application
+│   └── test.py             # Testing with new images and getting instant predictions
 │
 ├── .gitignore              # Prevents heavy data/models from uploading
 ├── requirements.txt        # Python dependencies
