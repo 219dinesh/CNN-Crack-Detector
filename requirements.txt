@@ -1,0 +1,6 @@
+List of required python packages :
+torch
+torchvision
+matplotlib
+Pillow
+PyQt5
