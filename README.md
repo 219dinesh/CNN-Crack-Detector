@@ -1,5 +1,8 @@
-# CNN-Crack-Detector
+
 # 🏗️ Concrete Crack Detector CNN
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+
 A deep learning project utilizing a custom Convolutional Neural Network (CNN) built in PyTorch to detect structural cracks in concrete surfaces. This repository includes a full training pipeline with data augmentation, validation tracking, and a PyQt5 desktop application for easy, click-and-point inference.
 
 # ✨ Features
@@ -10,7 +13,7 @@ A deep learning project utilizing a custom Convolutional Neural Network (CNN) bu
 
 # 📂 Project Structure
 ```Plaintext 
-cnn-crack-detector/
+CNN-Crack-Detector/
 │
 ├── my_dataset/             # (Ignored in Git) User-provided image dataset
 ├── saved_models/           # (Ignored in Git) Trained .pth weight files
@@ -30,8 +33,8 @@ cnn-crack-detector/
 
 Clone the repository:
 ```bash 
-git clone https://github.com/YOUR_USERNAME/cnn-crack-detector.git
-cd cnn-crack-detector
+git clone https://github.com/YOUR_USERNAME/CNN-Crack-Detector.git
+cd CNN-Crack-Detector
 ```
 
 Create a virtual environment (Recommended):
@@ -65,7 +68,7 @@ my_dataset/
 # 🚀 Usage
 
 1. Training the Model
-Once your dataset is in place, run the training script. The script automatically splits your data (80% Train / 20% Validation), trains the network, saves the best weights, and generates a loss/accuracy graph.
+Once your dataset is in place, run the training script. The script automatically splits your data (90% Train / 10% Validation), trains the network, saves the best weights, and generates a loss/accuracy graph.
 
 ```bash
 python src/train.py
@@ -78,7 +81,7 @@ Outputs: * saved_models/crack_detector_with_validation_cnn.pth
 To test the model on new, unseen images, launch the desktop application:
 
 ```bash
-python src/app.py
+python src/test.py
 ```
 A window will appear. Click "Select File", choose an image of a concrete surface, and the model will pop up a window displaying the image, its prediction, and its exact confidence percentage.
 
@@ -87,10 +90,10 @@ A window will appear. Click "Select File", choose an image of a concrete surface
 Don't want to train the model yourself? You can download my pre-trained weights here:
 👉 [Download crack_detector_cnn.pth](Insert Your Link Here)
 
-After downloading, create a saved_models/ folder in the root directory and place the .pth file inside before running src/app.py.
+After downloading, create a saved_models/ folder in the root directory and place the .pth file inside before running src/test.py.
 
 # 🛠️ Built With
 * PyTorch - The core Deep Learning framework.
-* Torchvision - Image processing and augmentation.
+* NumPy - Mathematical generation of analytical physics solutions
 * PyQt5 - For selecting the image using select window.
 * Matplotlib - Visualization and metric plotting.
